@@ -1,11 +1,13 @@
 "use client";
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 
 :root {
+  --font-coolvetica: 'coolvetica';
   --color-gray: #D9D9D9;
   --color-background: #1B1B1B;
+  --color-background-section: #1E1E1E;
 }
 
 * {
@@ -18,5 +20,4 @@ export const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
   background-color: var(--color-background);
 }
-`
-
+`;
