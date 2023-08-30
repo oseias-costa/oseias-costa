@@ -4,6 +4,8 @@ import { projects } from "./_data"
 import ProjectDescription from "@/components/Project/ProjectDescription";
 import { ImageLogo, ImgProject, ProjectItem } from "@/components/Project/project.styles";
 import Logo from "../../../public/oseias-logo-two.svg";
+import Link from "next/link";
+import { useRouter } from 'next/navigation'
 
 interface Params {
     params: {
@@ -12,10 +14,14 @@ interface Params {
 }
 
 export default function Page({ params }: Params){
+    const router = useRouter()
     const item = projects.filter(item => item.link === params.projectId)[0]
     
     return ( 
             <ProjectsContainer>
+                <button type="button" onClick={() => router.back()}>
+      Click here to go back
+    </button>
                 <ImageLogo src ={Logo} alt='Logo Oséias Costa' />
                 <ProjectItem>
                     <ImgProject src={item.img} alt={item.alt} />
