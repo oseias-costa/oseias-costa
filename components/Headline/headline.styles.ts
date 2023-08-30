@@ -101,11 +101,12 @@ export const LinkSocialMidia = styled(Image)`
 `;
 
 export const LogoIcon = styled(Image)`
-  width: 208px;
-  height: 56px;
+  width: 140px;
+  height: auto;
+  background-color: var(--color-background-section);
 
   @media (max-width: 590px) {
-    width: 133.71px;
-    height: 36px;
+    width: 100px;
+    height: auto;
   }
 `;

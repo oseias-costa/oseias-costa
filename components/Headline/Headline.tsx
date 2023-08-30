@@ -1,11 +1,10 @@
 "use client";
 import * as S from "./headline.styles";
 import ImgPhoto from "../../public/img-headline.png";
-import Logo from "../../public/oseias-logo.svg";
+import Logo from "../../public/oseias-logo-svg.svg";
 import Linkedin from "../../public/icons/linkedin-icon.svg";
 import Github from "../../public/icons/github-icon.svg";
 import { memo } from "react";
-import Image from "next/image";
 
 function Headline() {
   return (
