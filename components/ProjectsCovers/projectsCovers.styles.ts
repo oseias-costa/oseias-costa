@@ -5,7 +5,8 @@ export const ProjectsContainer = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-top: 45px;
+  justify-content: center;
+  /* padding-top: 45px; */
 `;
 
 export const H2 = styled.h2`
@@ -14,6 +15,7 @@ export const H2 = styled.h2`
   font-size: 32px;
   max-width: 340px;
   padding-bottom: 25px;
+  padding-top: 50px;
 
   @media (max-width: 590px) {
     font-size: 26px;
@@ -58,4 +60,6 @@ export const ProjectsItems = styled.div`
   display: flex;
   max-width: 900px;
   flex-wrap: wrap;
+  justify-content: center;
+  padding-bottom: 30px;
 `
