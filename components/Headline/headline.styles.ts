@@ -76,8 +76,8 @@ export const Button = styled.a`
   transition: 0.2s linear;
 
   &:hover {
-    box-shadow: rgba(255, 255, 255, 0.19) 0px 10px 20px,
-      rgba(255, 255, 255, 0.23) 0px 6px 6px;
+    box-shadow: rgba(242, 206, 27, 0.19) 0px 10px 20px,
+      rgba(242, 206, 27, 0.23) 0px 6px 6px;
   }
 `;
 
@@ -87,17 +87,17 @@ export const SocialMidias = styled.div`
   background-color: var(--color-background-section);
 `;
 
-export const LinkSocialMidia = styled(Image)`
-  padding: 5px;
-  width: 40px;
-  height: 40px;
+export const LinkSocialMidia = styled.a`
   cursor: pointer;
-  transition: 0.2s linear;
+  background-color: transparent;
 
-  &:hover {
-    transform: scale(1.1);
-    padding: 5px;
+  &:hover{
+    .svgColor {
+              transition: 0.3s linear;
+              fill: var(--color-hover);
+      }
   }
+
 `;
 
 export const LogoIcon = styled(Image)`

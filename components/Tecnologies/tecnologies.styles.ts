@@ -9,7 +9,7 @@ export const TecnologiesSectionContainer = styled.section`
 
 export const TecnologiesSectionList = styled.div`
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     flex-wrap: wrap;
     max-width: 900px;
 `

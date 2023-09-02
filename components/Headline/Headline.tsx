@@ -5,6 +5,8 @@ import Logo from "../../public/oseias-logo-svg.svg";
 import Linkedin from "../../public/icons/linkedin-icon.svg";
 import Github from "../../public/icons/github-icon.svg";
 import { memo } from "react";
+import GihutbIcon from "../icons/GithubIcon";
+import LinkedinIcon from "../icons/LinkedinIcon";
 
 function Headline() {
   return (
@@ -24,8 +26,12 @@ function Headline() {
         </S.Description>
         <S.Button>Entrar em Contato</S.Button>
         <S.SocialMidias>
-          <S.LinkSocialMidia src={Linkedin} alt="Linkedin Oséias Costa" />
-          <S.LinkSocialMidia src={Github} alt="Github Oséias Costa" />
+          <S.LinkSocialMidia href='https://github.com/oseias-costa' target='_blank'>
+            <GihutbIcon />
+          </S.LinkSocialMidia>
+          <S.LinkSocialMidia href='https://www.linkedin.com/in/oseias-costa/' target='_blank'>
+            <LinkedinIcon />
+          </S.LinkSocialMidia>
         </S.SocialMidias>
       </S.HeadlineDescription>
     </S.HeadlineContainer>

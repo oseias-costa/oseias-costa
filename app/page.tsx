@@ -1,4 +1,5 @@
 "use client";
+import Footer from "@/components/Footer/Footer";
 import Header from "@/components/Header/Header";
 import Headline from "@/components/Headline/Headline";
 import { Projects } from "@/components/ProjectsCovers/ProjectsCovers";
@@ -11,6 +12,7 @@ export default function Home() {
       <Headline />
       <Projects />
       <TecnologiesSection />  
+      <Footer />
     </main>
   );
 }

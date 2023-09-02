@@ -26,10 +26,10 @@ export const LinkMenu = styled.a`
   font-size: 14pt;
 
   &:hover {
-    color: #fff;
+    color: var(--color-hover);
     svg {
       .pathGray {
-        fill: #fff;
+        fill: var(--color-hover);
       }
     }
   }
