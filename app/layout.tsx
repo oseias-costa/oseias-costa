@@ -1,38 +1,41 @@
-import type { Metadata } from 'next'
-import { Manrope } from 'next/font/google'
-import { GlobalStyle } from './lib/GlobalStyle'
-import StyledComponentsRegistry from './lib/registry'
-import localFont from 'next/font/local'
+import type { Metadata } from "next";
+import { Manrope } from "next/font/google";
+import { GlobalStyle } from "./lib/GlobalStyle";
+import StyledComponentsRegistry from "./lib/registry";
+import localFont from "next/font/local";
 
 const coolvetica = localFont({
-  src: './lib/coolvetica.otf',
-  display: 'swap',
-  variable: '--font-coolvetica'
-})
+  src: "./lib/coolvetica.otf",
+  display: "swap",
+  variable: "--font-coolvetica",
+});
 
 const manrope = Manrope({
-  weight: '300',
-  display: 'swap',
-  subsets: ['latin'],
-  variable: '--font-manrope' 
-})
+  weight: ["300", "700", "400"],
+  display: "swap",
+  style: ["normal"],
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
-  title: 'Oséias Costa',
-  description: 'Portfólio Desenvolvedor de Software Oséias Costa.',
-}
+  title: "Oséias Costa",
+  description: "Portfólio Desenvolvedor de Software Oséias Costa.",
+};
 
 export default function RootLayout({
   children,
 }: {
-  children: React.ReactNode
+  children: React.ReactNode;
 }) {
   return (
     <html lang="en">
       <body className={`${manrope.variable} ${coolvetica.variable}`}>
-        <GlobalStyle />
-        <StyledComponentsRegistry>{children}</StyledComponentsRegistry>
+        <StyledComponentsRegistry>
+          <GlobalStyle />
+          {children}
+        </StyledComponentsRegistry>
       </body>
     </html>
-  )
+  );
 }
