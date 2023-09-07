@@ -47,4 +47,5 @@ export const TestimonialPersonFunction = styled.p`
 export const TestimonialBlocks = styled.div`
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
 `;

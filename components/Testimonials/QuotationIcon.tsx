@@ -67,7 +67,7 @@ M1.000000,170.500000
 z"
       />
       <path
-        fill="#999999"
+        fill="#302F2F"
         opacity="1.000000"
         stroke="none"
         d="
@@ -90,7 +90,7 @@ M16.871660,64.999954
 z"
       />
       <path
-        fill="#999999"
+        fill="#302F2F"
         opacity="1.000000"
         stroke="none"
         d="

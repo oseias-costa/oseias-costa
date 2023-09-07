@@ -6,6 +6,7 @@ export const HeadlineContainer = styled.section`
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+
 `;
 
 export const ImgHeadline = styled(Image)`
@@ -13,8 +14,8 @@ export const ImgHeadline = styled(Image)`
   height: 500.86px;
 
   @media (max-width: 590px) {
-    height: 100%;
-    width: auto;
+    height: auto;
+    width: 70%;
   }
 `;
 
@@ -78,6 +79,7 @@ export const Button = styled.a`
   &:hover {
     box-shadow: rgba(242, 206, 27, 0.19) 0px 10px 20px,
       rgba(242, 206, 27, 0.23) 0px 6px 6px;
+      background-color: var(--color-hover);
   }
 `;
 
@@ -101,12 +103,12 @@ export const LinkSocialMidia = styled.a`
 `;
 
 export const LogoIcon = styled(Image)`
-  width: 140px;
+  width: 180px;
   height: auto;
   background-color: var(--color-background-section);
 
   @media (max-width: 590px) {
-    width: 100px;
+    width: 140px;
     height: auto;
   }
 `;

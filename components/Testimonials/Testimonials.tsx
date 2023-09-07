@@ -16,7 +16,7 @@ export default function Testimonials() {
     />
   ));
   return (
-    <TestimonialsContainer>
+    <TestimonialsContainer id='depoimentos'>
       <H2>Depoimentos</H2>
       <TestimonialBlocks>{testimonialList}</TestimonialBlocks>
     </TestimonialsContainer>

@@ -1,4 +1,5 @@
 import { ReactNode } from "react";
+import Footer from "../Footer/Footer";
 import { H2 } from "../ProjectsCovers/projectsCovers.styles";
 import * as S from "./tecnologies.styles";
 import TecnologyItem from "./TecnologyItem";
@@ -14,7 +15,7 @@ export default function TecnologiesSection(){
     )
         
     return(
-        <S.TecnologiesSectionContainer>
+        <S.TecnologiesSectionContainer id='tecnologias'>
             <H2>Tecnologias</H2>
             <S.TecnologiesSectionList>{tecnologiesList}</S.TecnologiesSectionList>
         </S.TecnologiesSectionContainer>

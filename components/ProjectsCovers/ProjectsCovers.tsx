@@ -16,7 +16,7 @@ export function Projects() {
   })
 
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id='projetos'>
       <H2>Projetos Reais</H2>
       <ProjectsItems>{projectCards}</ProjectsItems>
     </ProjectsContainer>

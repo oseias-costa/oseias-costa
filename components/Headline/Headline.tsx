@@ -2,8 +2,6 @@
 import * as S from "./headline.styles";
 import ImgPhoto from "../../public/img-headline.png";
 import Logo from "../../public/oseias-logo-svg.svg";
-import Linkedin from "../../public/icons/linkedin-icon.svg";
-import Github from "../../public/icons/github-icon.svg";
 import { memo } from "react";
 import GihutbIcon from "../icons/GithubIcon";
 import LinkedinIcon from "../icons/LinkedinIcon";
@@ -24,7 +22,7 @@ function Headline() {
           Javascript, Typescript e React.js me capacita a criar interfaces de
           usuário excepcionais e funcionais.
         </S.Description>
-        <S.Button>Entrar em Contato</S.Button>
+        <S.Button href="https://api.whatsapp.com/send?phone=5554999817351&text=Ol%C3%A1!%20Vi%20seu%20portf%C3%B3lio%20e%20gostaria%20de%20conversar." target='_blank'>Entrar em Contato</S.Button>
         <S.SocialMidias>
           <S.LinkSocialMidia href='https://github.com/oseias-costa' target='_blank'>
             <GihutbIcon />

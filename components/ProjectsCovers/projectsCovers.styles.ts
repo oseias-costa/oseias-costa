@@ -35,7 +35,12 @@ export const ProjectCardContainer = styled.div`
     img {
       filter: grayscale(0.1)
     }
-    box-shadow: rgba(255, 255, 255, 0.1) 0px 4px 12px;
+    p {
+      color: var(--color-hover);
+    }
+
+    box-shadow: rgba(242, 206, 27, 0.19) 0px 10px 20px,
+      rgba(242, 206, 27, 0.23) 0px 6px 6px;
     }
 `;
 

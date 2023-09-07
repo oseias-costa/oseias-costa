@@ -7,7 +7,7 @@ import Logo from "../../../public/oseias-logo-two.svg";
 import Link from "next/link";
 import { useRouter } from 'next/navigation'
 import ArrowIcon from "@/components/Project/ArrowIcon";
-import { useEffect, useRef, useState } from "react";
+import Footer from "@/components/Footer/Footer";
 
 interface Params {
     params: {
@@ -18,14 +18,13 @@ interface Params {
 export default function Page({ params }: Params){
     const router = useRouter()
     const item = projects.filter(item => item.link === params.projectId)[0]
-    const imgRef = useRef(null) as any
-    const [ leftPosition, setLeftPosition ] = useState(0)
-     
-    useEffect(() => {
-        setLeftPosition(imgRef.current?.offsetLeft)
-    },[imgRef])
     
     return ( 
+        <>
+            <header>
+                <title>{`Projeto ${item.alt}`}</title>
+                <meta name='description' content={item.description} />
+            </header>
             <ProjectsContainer>
                 <ButtonBack type="button" onClick={() => router.back()}>
                     <ArrowIcon /> Voltar
@@ -34,7 +33,7 @@ export default function Page({ params }: Params){
                     <ImageLogo src ={Logo} alt='Logo Oséias Costa' />
                  </Link>
                 <ProjectItem>
-                    <ImgProject src={item.img} alt={item.alt} ref={imgRef} />
+                    <ImgProject src={item.img} alt={item.alt} />
                     <ProjectDescription 
                         alt={item.alt}            
                         description={item.description}
@@ -44,14 +43,8 @@ export default function Page({ params }: Params){
                         status={item.status}
                     />
                 </ProjectItem>
-            </ProjectsContainer>)
-}
-
-async function generateMetadata({ params }: Params) {
-    const item = projects.filter(item => item.link === params.projectId )[0]
-
-    return {
-        title: `Projeto ${item.alt}`,
-        description: `Projeto página - ${item.alt}`
-    }
+                <Footer />
+            </ProjectsContainer>
+            </>
+        )
 }

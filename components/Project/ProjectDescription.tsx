@@ -1,5 +1,4 @@
 "use client";
-import { Description } from "../Headline/headline.styles";
 import { LinkProject, ProjectDescriptionContainer, Technologies, TechnologiesList, ProjectH2, DescriptionItem, LinkProjectA, DescriptionContent, DescriptionProject, Technologie } from "./project.styles";
 
 interface ProjectDescriptionProps {
@@ -14,11 +13,12 @@ interface ProjectDescriptionProps {
 export default function ProjectDescription({ 
     alt, description, tecnologies, adress, code, status
 }: ProjectDescriptionProps){
-    const tecnologiesList = tecnologies.map((item: string) => <Technologie>{item}</Technologie>)
+    const tecnologiesList = tecnologies.map((item: string) => <Technologie key={item}>{item}</Technologie>)
 
     return(
+        <>
         <ProjectDescriptionContainer>
-            <ProjectH2>{alt}</ProjectH2>
+            <ProjectH2>Projeto {alt}</ProjectH2>
             <DescriptionProject>{description}</DescriptionProject>
             <Technologies>
                 <DescriptionItem>Tecnologias:</DescriptionItem>
@@ -34,8 +34,9 @@ export default function ProjectDescription({
             </LinkProject>
             <LinkProject>
                 <DescriptionItem>Status: </DescriptionItem>
-                <DescriptionContent>{status}</DescriptionContent>
+                <DescriptionContent>{status === 'active' ? 'Ativo' : 'Inativo'}</DescriptionContent>
             </LinkProject>
         </ProjectDescriptionContainer>
+        </>
     )
 }

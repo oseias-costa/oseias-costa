@@ -88,8 +88,18 @@ export const ImgProject = styled(Image)`
     }
 `
 
-export const ProjectH2 = styled(H2)`
-    background-color: var(--color-background-section);
+export const ProjectH2 = styled.h2`
+  color: var(--color-gray);
+  font-family: var(--font-coolvetica);
+  font-size: 32px;
+  max-width: 340px;
+  padding-bottom: 25px;
+  background-color: var(--color-background-section);
+
+  @media (max-width: 590px) {
+    font-size: 26px;
+    max-width: 260px;
+  }
 `
 
 export const DescriptionItem = styled.p`
