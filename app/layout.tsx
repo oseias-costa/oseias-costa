@@ -32,8 +32,7 @@ export default function RootLayout({
     <html lang="en">
       <header>
         <meta
-          name="google-site-verification"
-          content="XZl57Xh7vwYIHKZZIFyf2DJHnaTZ134vA3j4riBt618"
+          content="google-site-verification=XZl57Xh7vwYIHKZZIFyf2DJHnaTZ134vA3j4riBt618"
         />
       </header>
       <body className={`${manrope.variable} ${coolvetica.variable}`}>
